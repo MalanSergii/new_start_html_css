@@ -217,3 +217,38 @@ a{
 .phiacal-address{
   color: #ffffff;
 }
+
+/*======================== Portfolio ========================*/
+.port-navigation {}
+
+.port-nav__list {}
+
+.port-nav__item {}
+
+.port-nav__link {
+  border-radius: 4px; 
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--title-color);
+  background-color:var(--background-light-color);
+}
+.port-nav__link:hover,
+.port-nav__link:focus{
+  background-color:var(--accent-color);
+  color:#ffffff
+}
+.portfolio-cards {}
+
+.cards-list {}
+
+.cards-item {}
+
+.cards-img {}
+
+.cards-title {}
+
+.cards-text {}
