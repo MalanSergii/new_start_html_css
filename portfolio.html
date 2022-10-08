@@ -11,12 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="navigation">
+    <header class="header underline">
+      <nav class="navigation container">
         <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="">Студія</a></li>
@@ -34,29 +40,28 @@
       </nav>
     </header>
     <main>
-      <h1>Портфоліо</h1>
-      <section class="port-navigation">
-        <h2 class="">Фільтр робіт</h2>
+      <h1 class="hidden">Портфоліо</h1>
+      <section class="port-navigation section container">
+        <h2 class="hidden">Фільтр робіт</h2>
         <ul class="port-nav__list">
           <li class="port-nav__item">
-            <button type="button" class="port-nav__button" href="">Усі</button>
+            <button type="button" class="port-nav__button">Усі</button>
           </li>
           <li class="port-nav__item">
-            <button type="button" class="port-nav__button" href="">Веб-сайти</button>
+            <button type="button" class="port-nav__button">Веб-сайти</button>
           </li>
           <li class="port-nav__item">
-            <button type="button" class="port-nav__button" href="">Додатки</button>
+            <button type="button" class="port-nav__button">Додатки</button>
           </li>
           <li class="port-nav__item">
-            <button type="button" class="port-nav__button" href="">Дизайн</button>
+            <button type="button" class="port-nav__button">Дизайн</button>
           </li>
           <li class="port-nav__item">
-            <button type="button" class="port-nav__button" href="">Маркетинг</button>
+            <button type="button" class="port-nav__button">Маркетинг</button>
           </li>
         </ul>
-      </section>
-      <section class="portfolio-cards">
-        <h2>Наша робота</h2>
+
+        <h2 class="hidden">Наша робота</h2>
         <ul class="cards-list">
           <li class="cards-item">
             <img
@@ -66,9 +71,12 @@
               height="294"
               alt="laptop"
             />
-            <h3 class="cards-title">Технокряк</h3>
-            <p class="cards-text">Веб-сайт</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Технокряк</h3>
+              <p class="cards-text">Веб-сайт</p>
+            </div>
           </li>
+
           <li class="cards-item">
             <img
               class="cards-img"
@@ -77,8 +85,10 @@
               height="294"
               alt="playing bascetball"
             />
-            <h3 class="cards-title">Постер New Orlean vs Golden Star</h3>
-            <p class="cards-text">Дизайн</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Постер New Orlean vs Golden Star</h3>
+              <p class="cards-text">Дизайн</p>
+            </div>
           </li>
           <li class="cards-item">
             <img
@@ -88,9 +98,12 @@
               height="294"
               alt="Seafood logo"
             />
-            <h3 class="cards-title">Ресторан Seafood</h3>
-            <p class="cards-text">Додаток</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Ресторан Seafood</h3>
+              <p class="cards-text">Додаток</p>
+            </div>
           </li>
+
           <li class="cards-item">
             <img
               class="cards-img"
@@ -99,9 +112,12 @@
               height="294"
               alt="headphones"
             />
-            <h3 class="cards-title">Проєкт Prime</h3>
-            <p class="cards-text">Маркетинг</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Проєкт Prime</h3>
+              <p class="cards-text">Маркетинг</p>
+            </div>
           </li>
+
           <li class="cards-item">
             <img
               class="cards-img"
@@ -110,9 +126,12 @@
               height="294"
               alt="boxes"
             />
-            <h3 class="cards-title">Проєкт Boxes</h3>
-            <p class="cards-text">Додаток</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Проєкт Boxes</h3>
+              <p class="cards-text">Додаток</p>
+            </div>
           </li>
+
           <li class="cards-item">
             <img
               class="cards-img"
@@ -121,9 +140,12 @@
               height="294"
               alt="pc"
             />
-            <h3 class="cards-title">Inspiration has no Borders</h3>
-            <p class="cards-text">Веб-сайт</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Inspiration has no Borders</h3>
+              <p class="cards-text">Веб-сайт</p>
+            </div>
           </li>
+
           <li class="cards-item">
             <img
               class="cards-img"
@@ -132,9 +154,12 @@
               height="294"
               alt="open book"
             />
-            <h3 class="cards-title">Видання Limited Edition</h3>
-            <p class="cards-text">Дизайн</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Видання Limited Edition</h3>
+              <p class="cards-text">Дизайн</p>
+            </div>
           </li>
+
           <li class="cards-item">
             <img
               class="cards-img"
@@ -143,9 +168,12 @@
               height="294"
               alt="tag"
             />
-            <h3 class="cards-title">Проєкт LAB</h3>
-            <p class="cards-text">Маркетинг</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Проєкт LAB</h3>
+              <p class="cards-text">Маркетинг</p>
+            </div>
           </li>
+
           <li class="cards-item">
             <img
               class="cards-img"
@@ -154,34 +182,38 @@
               height="294"
               alt="working on laptop"
             />
-            <h3 class="cards-title">Growing Business</h3>
-            <p class="cards-text">Додаток</p>
+            <div class="cards-description">
+              <h3 class="cards-title">Growing Business</h3>
+              <p class="cards-text">Додаток</p>
+            </div>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a class="footer-logo" href="./index.html"
-        ><span class="footer__logo--accent">Web</span>Studio</a
-      >
-      <address class="address">
-        <ul class="footer-address">
-          <li class="address-item">
-            <a
-              class="address-link phiacal-address"
-              href="https://goo.gl/maps/58HYPJUhAKsVyBu98"
-              target="_blank"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="address-link" href="mailto:">info@devstudio.com</a>
-          </li>
-          <li class="address-item">
-            <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="footer-logo" href="./index.html"
+          ><span class="footer__logo--accent">Web</span>Studio</a
+        >
+        <address class="address">
+          <ul class="footer-address">
+            <li class="address-item">
+              <a
+                class="address-link phiacal-address"
+                href="https://goo.gl/maps/58HYPJUhAKsVyBu98"
+                target="_blank"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="mailto:">info@devstudio.com</a>
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
