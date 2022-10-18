@@ -25,7 +25,7 @@
       <nav class="navigation container">
         <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Студія</a></li>
+          <li class="nav-item active"><a class="nav-link" href="./index.html">Студія</a></li>
           <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
           <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
         </ul>
@@ -56,7 +56,7 @@
           Ефективні рішення <br />
           для вашого бізнесу
         </h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <button data-modal-open class="hero-btn" type="button">Замовити послугу</button>
       </section>
 
       <!-- what we do -->
@@ -118,6 +118,7 @@
               width="370"
               height="294"
             />
+            <p class="job__description">Десктопні додатки</p>
           </li>
           <li class="job-item">
             <img
@@ -127,6 +128,7 @@
               width="370"
               height="294"
             />
+            <p class="job__description">Мобільні додатки</p>
           </li>
           <li class="job-item">
             <img
@@ -136,6 +138,7 @@
               width="370"
               height="294"
             />
+            <p class="job__description">Дизайнерські рішення</p>
           </li>
         </ul>
       </section>
@@ -436,5 +439,17 @@
         </div>
       </div>
     </footer>
+    <!--================ owerlay================-->
+    <div data-modal class="overlay is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="modal__button">
+          <svg class="modal__icon">
+            <use href="./images/sprite.svg#btn-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
