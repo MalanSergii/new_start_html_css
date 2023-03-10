@@ -1,0 +1,48 @@
+.achives-list {
+  display: flex;
+  margin-bottom: 94px;
+
+}
+
+.achives__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-light-color);
+  margin-bottom: 30px;
+
+}
+
+.achives__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.achives-item {
+  flex-basis: calc((100% - 90px)/4);
+}
+
+.achives-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.achives-title {
+
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.achives-text {
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-color)
+}
